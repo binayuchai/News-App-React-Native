@@ -17,7 +17,7 @@ export default function HomeScreen() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        'https://newsapi.org/v2/everything?q=apple&from=2024-06-30&to=2024-06-30&sortBy=popularity&pageSize=20&apiKey=6423049679ec4fb39a1d2f109baf6022',
+        'https://newsapi.org/v2/everything?q=apple&from=2024-06-30&to=2024-06-30&sortBy=popularity&pageSize=20&apiKey=',
       );
       setData(response.data.articles);
       setisLoading(false);
